@@ -1,4 +1,4 @@
-# API - Desafio E-commerce
+# API - Lens-app E-commerce
 
 API RESTful desenvolvida como parte de um desafio de e-commerce. Construída com Node.js, Fastify e TypeScript, esta API oferece uma base para gerenciar lentes.
 
@@ -37,8 +37,8 @@ Siga os passos abaixo para configurar e executar o projeto em seu ambiente local
 1.  Clone o repositório para sua máquina local:
 
     ```bash
-    git clone <url-do-seu-repositorio>
-    cd desafio-e-commerce
+    git clone https://github.com/M-its/lens-app-back-end
+    cd lens-app-back-end
     ```
 
 2.  Instale as dependências do projeto:
