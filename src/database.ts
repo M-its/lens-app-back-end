@@ -1,4 +1,4 @@
-import { Knex, knex as setupKnex } from 'knex'
+import setupKnex, { Knex } from 'knex'
 import { env } from './env'
 
 if (!process.env.DATABASE_URL) {
