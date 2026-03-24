@@ -28,6 +28,7 @@
     "fastify": "^5.4.0",
     "fastify-type-provider-zod": "^5.0.3",
     "knex": "^3.1.0",
+    "pg": "^8.20.0",
     "sqlite3": "^5.1.7",
     "ts-node": "^10.9.2",
     "zod": "^4.0.13"
