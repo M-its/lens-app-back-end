@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
+    "build": "tsc",
     "start": "pm2-runtime start ecosystem.config.js",
     "knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js",
     "test": "vitest"
