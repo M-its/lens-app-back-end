@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'lens-app',
+      name: 'lens-app-api',
       script: './dist/server.js',
       instances: 'max',
       env: {

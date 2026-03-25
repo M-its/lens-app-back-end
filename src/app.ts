@@ -23,8 +23,8 @@ app.register(fastifySwagger, {
   transform: jsonSchemaTransform,
   openapi: {
     info: {
-      title: 'API E-commerce',
-      description: 'API documentation for a e-commerce challenge.',
+      title: 'Lens app API',
+      description: 'API documentation for a Lens app e-commerce.',
       version: '1.0.0',
     },
     tags: [{ name: 'products', description: 'products related oparations' }],
