@@ -16,7 +16,7 @@ export const config: Knex.Config = {
   useNullAsDefault: true,
   migrations: {
     extension: process.env.NODE_ENV === 'production' ? 'js' : 'ts',
-    directory: './db/migrations',
+    directory: process.env.NODE_ENV === 'production' ? './dist/db/migrations' : './src/db/migrations',
   },
 }
 export const knex = setupKnex(config)
