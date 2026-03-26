@@ -9,10 +9,21 @@ import {
   validatorCompiler,
 } from 'fastify-type-provider-zod'
 
+// Patch para que o JSON consiga serializar campos BigInt (comuns no Postgres)
+// sem isso, a API retorna erro 500 ao tentar enviar IDs ou campos de contagem.
+// @ts-ignore
+BigInt.prototype.toJSON = function () {
+  return this.toString()
+}
+
 export const app = fastify()
 
 app.setValidatorCompiler(validatorCompiler)
 app.setSerializerCompiler(serializerCompiler)
+
+app.get('/', async () => {
+  return { status: 'Lens App API is running' }
+})
 
 app.register(fastifyCors, {
   origin: ['http://localhost:5173', 'https://mits-lens-app.netlify.app'],
