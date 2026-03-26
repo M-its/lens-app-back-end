@@ -3,7 +3,7 @@ module.exports = {
     {
       name: 'lens-app-api',
       script: './dist/server.js',
-      instances: 'max',
+      instances: 2,
       env: {
         NODE_ENV: 'production',
       },

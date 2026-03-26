@@ -6,7 +6,7 @@
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
     "start": "pm2-runtime start ecosystem.config.js",
-    "knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js",
+    "knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js --knexfile knexfile.ts",
     "test": "vitest"
   },
   "keywords": [],
